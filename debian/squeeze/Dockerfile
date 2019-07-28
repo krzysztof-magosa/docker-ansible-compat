@@ -9,5 +9,5 @@ RUN \
   echo 'APT::Get::AllowUnauthenticated "true";' > /etc/apt/apt.conf.d/99-oldie && \
   echo 'Acquire::Check-Valid-Until "0";' >> /etc/apt/apt.conf.d/99-oldie && \
   apt-get update && \
-  apt-get install -y python sudo bash ca-certificates && \
+  apt-get install -y python sudo bash ca-certificates lsb-release && \
   apt-get clean
